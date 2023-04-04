@@ -1,0 +1,7 @@
+# Virtual Environment
+venv/
+
+# VS Code
+.vscode/
+
+__pychache__/
