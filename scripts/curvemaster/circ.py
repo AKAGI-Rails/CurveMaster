@@ -1,5 +1,4 @@
 """Circular Bezier Curve Calculator"""
-
 import numpy as np
 
 kappa = 4 / 3 * (np.sqrt(2)-1)
@@ -31,12 +30,9 @@ class BezierCirc:
                           [np.sin(angrad), np.cos(angrad)]])
 
         x3 = np.array([r*np.sin(angrad), r*(1-np.cos(angrad))])
-
-
         x2 = x3 - rot @ x1.T
 
         self._cps = np.vstack([x0, x1, x2, x3])
-
         return self._cps
 
     @property
